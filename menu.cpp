@@ -81,7 +81,6 @@ int main() {
                 std::cout << "\nWrite index=";
                 int index;
                 std::cin >> index;
-                //String value = array[index];
                 std::cout << "\narray[" << index << "]=" << array[index].get_string();
                 break;
             }

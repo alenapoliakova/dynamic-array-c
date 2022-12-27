@@ -25,8 +25,6 @@ DynamicArray<T>::DynamicArray(int nums) {
 
 template <typename T>
 DynamicArray<T>::DynamicArray(const DynamicArray& arr) {
-	// Copy constructor
-	if (length > 0) delete[] data; 
 	data = new T[arr.length];
 	length = arr.length;
 	for (int index = 0; index < length; index++) {
