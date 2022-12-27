@@ -12,11 +12,10 @@ String::String() {
 
 
 String::String(const char* c_string) {
+	data = new char[strlen(c_string) + 1];
+	strcpy(data, c_string);
 	length = strlen(c_string);
-	data = new char[length + 1];
-	for (int i = 0; i <= length; i++) {
-		data[i] = c_string[i];
-	}
+	data[length] = '\0';
 }
 
 
